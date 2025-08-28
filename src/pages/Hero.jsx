@@ -1,10 +1,12 @@
 import { Button } from "@chakra-ui/react";
 import React from "react";
+import { useNavigate } from "react-router";
 function Hero() {
+  const navigate = useNavigate();
   return (
     <div className="flex w-full justify-center flex-col items-center h-[100vh] ">
       <div className="text-center ">
-        <h1 className="font-bold">Welcome to Cash an Day books</h1>
+        <h1>Welcome to Cash an Day books</h1>
         <h2>Manage you daily cash & bank records with ease</h2>
         <p>Select your role to continue</p>
       </div>
