@@ -1,0 +1,119 @@
+[
+    {
+        "id": 1,
+        "name": "TechZone Computers Ltd",
+        "contactPerson": "Joseph Mwangi",
+        "phone": "+254-712-345678",
+        "email": "sales@techzone.co.ke",
+        "address": "Westlands, Nairobi",
+        "supplies": [
+            "Desktop Computer",
+            "Server Rack",
+            "Extension Cables",
+            "Projector"
+        ],
+        "rating": 4.5
+    },
+    {
+        "id": 2,
+        "name": "Office Essentials Supplies",
+        "contactPerson": "Mary Njeri",
+        "phone": "+254-733-876543",
+        "email": "info@officeessentials.co.ke",
+        "address": "Industrial Area, Nairobi",
+        "supplies": [
+            "Printer Paper",
+            "Office Chairs",
+            "Office Stationery Set",
+            "Whiteboards",
+            "Whiteboard Markers"
+        ],
+        "rating": 4.2
+    },
+    {
+        "id": 3,
+        "name": "MediCare Distributors",
+        "contactPerson": "Dr. Stella Ouko",
+        "phone": "+254-710-987654",
+        "email": "orders@medicare.co.ke",
+        "address": "Upper Hill, Nairobi",
+        "supplies": [
+            "Surgical Gloves",
+            "Lab Coats",
+            "First Aid Kits",
+            "Hand Sanitizers"
+        ],
+        "rating": 4.7
+    },
+    {
+        "id": 4,
+        "name": "EngiPro Hardware Supplies",
+        "contactPerson": "Peter Kamau",
+        "phone": "+254-799-456123",
+        "email": "support@engipro.co.ke",
+        "address": "Thika Road, Nairobi",
+        "supplies": [
+            "Safety Helmets",
+            "Protective Boots",
+            "Extension Cables",
+            "Uniforms"
+        ],
+        "rating": 4.3
+    },
+    {
+        "id": 5,
+        "name": "CoolAir Solutions Ltd",
+        "contactPerson": "Elizabeth Wairimu",
+        "phone": "+254-722-112233",
+        "email": "hello@coolair.co.ke",
+        "address": "Ngong Road, Nairobi",
+        "supplies": [
+            "Air Conditioners",
+            "Water Dispensers",
+            "Coffee Machine"
+        ],
+        "rating": 4.1
+    },
+    {
+        "id": 6,
+        "name": "EduLab Equipment Suppliers",
+        "contactPerson": "Dr. Dennis Chebet",
+        "phone": "+254-701-334455",
+        "email": "sales@edulab.co.ke",
+        "address": "Kilimani, Nairobi",
+        "supplies": [
+            "Microscopes",
+            "Lab Coats",
+            "Whiteboards"
+        ],
+        "rating": 4.6
+    },
+    {
+        "id": 7,
+        "name": "SafeGuard Enterprises",
+        "contactPerson": "James Wafula",
+        "phone": "+254-720-998877",
+        "email": "quotes@safeguard.co.ke",
+        "address": "Mombasa Road, Nairobi",
+        "supplies": [
+            "Uniforms",
+            "Protective Boots",
+            "Safety Helmets"
+        ],
+        "rating": 4.4
+    },
+    {
+        "id": 8,
+        "name": "Hospitality World Ltd",
+        "contactPerson": "Catherine Wairimu",
+        "phone": "+254-735-667788",
+        "email": "orders@hospitalityworld.co.ke",
+        "address": "Karen, Nairobi",
+        "supplies": [
+            "Coffee Machine",
+            "Office Chairs",
+            "Water Dispensers"
+        ],
+        "rating": 4.0
+    }
+]

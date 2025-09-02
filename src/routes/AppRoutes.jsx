@@ -5,6 +5,7 @@ import CashierDashboard from "../pages/cashier/CashierDashboard";
 import RecordTransaction from "../pages/cashier/RecordTransaction";
 import ProcurementDashboard from "../pages/procurementOfficer/ProcurementDashboard";
 import Notifications from "../pages/procurementOfficer/needIdentification/Notifications";
+import Vendors from "../pages/procurementOfficer/manageSuppliers/Vendors";
 
 function AppRoutes() {
   return (
@@ -16,6 +17,7 @@ function AppRoutes() {
         </Route>
         <Route path="procurement-dashboard" element={<ProcurementDashboard />}>
           <Route path="notifications" element={<Notifications />}></Route>
+          <Route path="vendors" element={<Vendors />}></Route>
         </Route>
       </Routes>
     </div>

@@ -32,7 +32,7 @@ function ProcurementDashboard() {
                 Needs
               </li>
             </Link>
-            <Link to="view-vendors">
+            <Link to="vendors">
               <li className="flex items-center gap-6 p-3 rounded-lg hover:bg-gray-50 hover:shadow-2xl">
                 <Users2Icon />
                 View Vendors
