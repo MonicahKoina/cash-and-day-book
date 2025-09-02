@@ -5,50 +5,68 @@ import {
   MoveLeft,
   NotebookPen,
   NotebookText,
+  PanelsTopLeft,
   ReceiptText,
   SquarePen,
 } from "lucide-react";
-import React from "react";
+import React, { useState } from "react";
+import { Link, Outlet } from "react-router";
 
 function CashierDashboard() {
+  const [collapsed, setCollapsed] = useState(false);
   return (
-    <div className="flex h-screen font-semibold text-gray-800">
-      <aside className="w-72 bg-gray-100 flex flex-col rounded-r-2xl shadow-lg">
-        <div className="p-6 border-b border-gray-200">
-          <h1 className="text-lg font-semibold text-center">Hello, User</h1>
+    <div className="flex h-screen font-semibold text-gray-800 bg-gradient-to-b from-gray-100 to-gray-50 ">
+      <aside
+        className={`${
+          collapsed ? "w-20" : "w-72"
+        }  flex flex-col rounded-r-2xl shadow-lg transition-all duration-300`}
+      >
+        <div className="p-6 border-b border-gray-200 flex justify-between items-center">
+          {!collapsed && (
+            <h1 className="text-lg font-semibold">
+              <Landmark />
+            </h1>
+          )}
+          <button onClick={() => setCollapsed(!collapsed)}>
+            <PanelsTopLeft />
+          </button>
         </div>
-        <nav className="flex-1 p-6">
-          <ul className="flex flex-col gap-3">
-            <li className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-400 hover:text-white cursor-pointer transition">
-              <LayoutPanelLeft />
-              Dashboard
-            </li>
-            <li className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-400 hover:text-white cursor-pointer transition">
-              <SquarePen />
-              Record Transaction
-            </li>
+        <nav className="flex-1 p-4">
+          <ul className="flex flex-col gap-2">
+            <Link to="">
+              <li className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-400 hover:text-white cursor-pointer transition">
+                <LayoutPanelLeft />
+                {!collapsed && "Dashboard"}
+              </li>
+            </Link>
+            <Link to="record-transaction">
+              <li className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-400 hover:text-white cursor-pointer transition">
+                <SquarePen />
+                {!collapsed && "Record Transaction"}
+              </li>
+            </Link>
             <li className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-400 hover:text-white cursor-pointer transition">
               <BookOpenText />
-              View Transactions
+              {!collapsed && "View Transactions"}
             </li>
             <li className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-400 hover:text-white cursor-pointer transition">
               <ReceiptText />
-              Issue Receipts
+              {!collapsed && "Issue Receipts"}
             </li>
             <li className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-400 hover:text-white cursor-pointer transition">
               <NotebookPen />
-              Record Goods Returned
+              {!collapsed && "Record Goods Returned"}
             </li>
             <li className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-400 hover:text-white cursor-pointer transition">
               <NotebookText />
-              View Goods Returned
+              {!collapsed && "View Goods Returned"}
             </li>
           </ul>
         </nav>
         <div className="p-6 border-t border-gray-200">
-          <button className="w-full flex items-center justify-between   transition p-3 rounded-lg font-semibold">
+          <button className="w-full flex items-center justify-center gap-2 transition p-3 rounded-lg font-semibold">
             <MoveLeft />
-            Log Out
+            {!collapsed && "Log Out"}
           </button>
         </div>
       </aside>
@@ -60,6 +78,7 @@ function CashierDashboard() {
             <span className="absolute top-0 right-0 w-2 h-2 bg-red-500 rounded-full"></span>
           </button>
         </header>
+        <Outlet />
       </main>
     </div>
   );
